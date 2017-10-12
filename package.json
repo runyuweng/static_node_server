@@ -1,0 +1,20 @@
+{
+  "name": "static_node_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wengwengweng/static_node_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wengwengweng/static_node_server/issues"
+  },
+  "homepage": "https://github.com/wengwengweng/static_node_server#readme"
+}

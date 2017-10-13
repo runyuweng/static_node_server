@@ -6,12 +6,14 @@ const mime = require('./MIME');
 const PORT = 8000;
 
 const server = http.createServer((req, res) => {
-  const pathname = url.parse(req.url).pathname;
+  const pathname = url.parse(req.url).pathname === '/'? '/index.html': url.parse(req.url).pathname;
   const realPath = `assets${pathname}`;
   const ISEXIST = fs.existsSync(realPath);
 
   if(ISEXIST){
-    const extname = path.extname(pathname).slice(1);    
+    let extname = path.extname(pathname);
+    extname = extname.slice(1) || 'unknown';
+
     fs.readFile(realPath, (err, data) => {
       if (err) throw err;
       res.writeHead(200, {

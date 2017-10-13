@@ -16,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/wengwengweng/static_node_server/issues"
   },
-  "homepage": "https://github.com/wengwengweng/static_node_server#readme"
+  "homepage": "https://github.com/wengwengweng/static_node_server#readme",
+  "dependencies": {
+  }
 }
